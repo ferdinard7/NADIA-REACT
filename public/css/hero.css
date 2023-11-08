@@ -1,0 +1,58 @@
+.hero-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    /* background-color: #f0f0f0; */
+}
+
+.hero-wrapper {
+    width: 100%;
+    height: 90vh;
+    background-image: url('../images/gathering.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.star-icon {
+    /* color: blue; */
+    /* background-color: blue; */
+}
+
+.bread-wrapper {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+.bread-heading {
+    letter-spacing: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.welcome-heading {
+    letter-spacing: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 15px;  
+}

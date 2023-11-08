@@ -1,0 +1,30 @@
+.gallery-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9F9F9;
+    padding: 3% 7%;
+}
+
+.first-gallery-page {
+    margin-right: 3%;
+    margin-left: 4%;
+}
+
+.first-gallery-page > img {
+    height: 500px;
+    width: 450px;
+}
+
+.second-gallery-page {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.second-gallery-page > img {
+    margin-right: 5%;
+    margin-bottom: 2%;
+    height: 250px;
+    width: 250px;
+}

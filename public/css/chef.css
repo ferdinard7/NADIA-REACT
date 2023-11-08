@@ -1,0 +1,103 @@
+.first-chef-container {
+    margin: 3% 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .chef-section {
+    position: relative;
+  }
+  
+  .chef-container {
+    position: relative;
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chef-cap {
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
+    /* margin: 50%; */
+  }
+  
+  .chef-icon {
+    position: absolute;
+    width: 80px; /* Adjust icon size */
+    height: 80px; /* Adjust icon size */
+    background-color: #F23B43; /* Adjust icon color */
+    border-radius: 50%;
+    transform-origin: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .icon-45 {
+    top: 10%;
+    /* left: 50%; */
+    right: 200%;
+    /* transform: translateX(-50%) rotate(45deg); */
+    /* margin-bottom: 10%; */
+  }
+
+  .support1 {
+    position: absolute;
+    width: 90%;
+    height: 100px;
+    top: 55%;
+    /* left: 50%; */
+    right: 170%;
+    text-align: center;
+    /* display: flex;
+    align-items: center; */
+    /* color: #fff; */
+  }
+  
+  
+  .icon-90 {
+    right: 30%;
+    top: -100%;
+    /* transform: translateY(-50%) rotate(90deg); */
+  }
+
+  .support2 {
+    position: absolute;
+    width: 90%;
+    height: 100px;
+    right: 9%;
+    top: -50%;
+    text-align: center;
+  }
+  
+  .icon-135 {
+    bottom: 45%;
+    left: 190%;
+    margin-bottom: 10%;
+    /* transform: translateX(-50%) rotate(135deg); */
+  }
+
+  .support3 {
+    position: absolute;
+    width: 90%;
+    height: 100px;
+    bottom: 1%;
+    left: 170%;
+    text-align: center;
+  }
+  
+  .font-icon {
+    color: #fff;
+    font-size: 29px;
+  }
+
+
+  .chef-cap-img {
+    height: 700px;
+  }

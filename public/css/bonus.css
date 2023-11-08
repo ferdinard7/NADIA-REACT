@@ -1,0 +1,21 @@
+.bonus-container {
+    background-color: #F23B43;
+    height: 40px;
+    color: #fff;
+}
+
+.bonus-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 7px 0 0 8%;
+    /* justify-content: center; */
+}
+
+.bonus-wrapper p {
+    font-size: 13px;
+}
+
+.location {
+    /* padding-top: 5px; */
+    font-size: 18px !important;
+}

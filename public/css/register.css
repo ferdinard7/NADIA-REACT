@@ -1,0 +1,100 @@
+.register-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    /* background-color: #f0f0f0; */
+}
+
+.register-logo {
+  height: 90px;
+  padding-top: 4%;
+  text-align: center;
+}
+
+.register-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/table.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+    /* bottom: 70px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.star-icon {
+    /* color: blue; */
+    /* background-color: blue; */
+}
+
+.bread-register-wrapper {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    /* color: #fff; */
+    height: 80vh;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #fff;
+    /* text-align: center; */
+}
+
+.bread-register-wrapper > h3 {
+   text-align: center;
+}
+
+form {
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+form > p {
+  font-weight: 600;
+  margin-top: 2%;
+  margin-bottom: 1%;   
+}
+
+.register-button {
+    width: 82%;
+    margin-top: 6%;
+    padding: 3% 0;
+    color: #fff;
+    background-color: #FF0D0D;
+    border: 1px solid #FF0D0D;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+
+}
+
+.register-button:hover {
+   background-color: #fff;
+   color: #FF0D0D;
+}
+
+input {
+    height: 35px;
+    width: 80%;
+    font-size: 15px;
+}
+
+.register-paragraph {
+    font-size: 15px;
+    margin-top: 3%;
+}
