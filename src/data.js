@@ -92,7 +92,7 @@ const Danish =  [
 const galleryImages = [
     {
         id:1,
-        img: "/images/20.png",
+        img: "/images/20.PNG",
     },
     {
         id:2,
@@ -108,19 +108,19 @@ const galleryImages = [
     },
     {
         id:5,
-        img: "/images/24.png",
+        img: "/images/24.PNG",
     },
     {
         id:6,
-        img: "/images/25.png",
+        img: "/images/25.PNG",
     },
     {
         id:7,
-        img: "/images/26.png",
+        img: "/images/26.PNG",
     },
     {
         id:8,
-        img: "/images/27.png",
+        img: "/images/27.PNG",
     },
 ]
 
