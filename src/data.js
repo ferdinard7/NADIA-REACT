@@ -49,6 +49,45 @@ const Data = [
     },
 ]
 
+const Danish =  [
+    {
+        id: 1,
+        img: "/images/1.png",
+        title: "Danish Croissant",
+        ingredient: "Flour, Yeast, Sugar, Salt, Butter, Milk, Egg, Water, Vanilla, and Jam",
+    },
+    {
+        id: 2,
+        img: "/images/1.png",
+        title: "Danish Croissant",
+        ingredient: "Flour, Yeast, Sugar, Salt, Butter, Milk, Egg, Water, Vanilla, and Jam",
+    },
+    {
+        id: 3,
+        img: "/images/1.png",
+        title: "Danish Croissant",
+        ingredient: "Flour, Yeast, Sugar, Salt, Butter, Milk, Egg, Water, Vanilla, and Jam",
+    },
+    {
+        id: 4,
+        img: "/images/1.png",
+        title: "Danish Croissant",
+        ingredient: "Flour, Yeast, Sugar, Salt, Butter, Milk, Egg, Water, Vanilla, and Jam",
+    },
+    {
+        id: 5,
+        img: "/images/1.png",
+        title: "Danish Croissant",
+        ingredient: "Flour, Yeast, Sugar, Salt, Butter, Milk, Egg, Water, Vanilla, and Jam",
+    },
+    {
+        id: 6,
+        img: "/images/1.png",
+        title: "Danish Croissant",
+        ingredient: "Flour, Yeast, Sugar, Salt, Butter, Milk, Egg, Water, Vanilla, and Jam",
+    },
+]
+
 
 const galleryImages = [
     {

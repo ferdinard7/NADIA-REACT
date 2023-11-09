@@ -6,7 +6,7 @@ function Product() {
      <div className="product-container">
         
         <h2 className="menu-heading">Products for you</h2>
-        {/* <div className="danish-wrapper"> */}
+        
         <div className="product-wrapper">
       {Danish.map((oneItem) => {
         return (
