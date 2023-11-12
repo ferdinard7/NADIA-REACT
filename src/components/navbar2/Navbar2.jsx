@@ -1,42 +1,57 @@
-import React from "react";
+import React, { useRef } from "react";
 import  Badge  from "@mui/material/Badge"
-import { Search, ShoppingCartOutlined, AccountCircleOutlined } from '@mui/icons-material';
+import { ShoppingCartOutlined, AccountCircleOutlined } from '@mui/icons-material';
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import ContactButton from "../ContactButton";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar2() {
+
+    const navRef = useRef();
+
+    const showNavbar = () => {
+        navRef.current.classList.toggle(
+            "responsive_nav"
+        );
+    };
 
     const quantity = useSelector(state=>state.cart.quantity);
 
     console.log(quantity);
 
     return (
-        <div className="navbar2-container">
-        <div className="navbar2-wrapper">
-         <div className="left">
-         <img  className="logo" src="/images/nadia.png" alt="nadia" />
-         </div>
-         <div className="right">
-          <div className="menu-item"><Link to="/" className="nav2-link" >Home</Link></div>
-          <div className="menu-item active"><Link to="/products/all" className="nav2-link">Shop</Link></div>
-          <div className="menu-item"><Link to="/gallery" className="nav2-link">Gallery</Link></div>
-          <div className="menu-item"><Link to="/" className="nav2-link">About</Link></div>
-          <div className="menu-item"><Link to="/" className="nav2-link">Contact</Link></div>
-          
-          <div className="menu-item"> <Search /> </div>
-          <div className="menu-item">
-          <Link to="/cart">
-          <Badge badgeContent={quantity} color="secondary">
-            <ShoppingCartOutlined color="action" />
+        <div>
+        <header className="header">
+        <h3><img src="/images/nadia.png" alt="nadia" /></h3>
+        <nav ref={navRef}>
+            <Link to="/">Home</Link>
+            <Link to="/products/all">Shop</Link>
+            <Link to="/gallery">Gallery</Link>
+            <Link to="/">About</Link>
+            {/* <Link to="/">Contact</Link> */}
+            <ContactButton />
+            <Link to="/cart">
+            <Badge badgeContent={quantity} color="secondary">
+                <ShoppingCartOutlined color="action" />
             </Badge>
             </Link>
-            </div>
-            <div className="menu-item"><Link to="/register"> <AccountCircleOutlined /> </Link> </div>
-         </div>
-        </div>
-        </div>
+            <Link to="/register"><AccountCircleOutlined /></Link>
 
+            <button
+                className="nav-btn nav-close-btn"
+                onClick={showNavbar}>
+                <FaTimes />
+            </button>
+        </nav>
+        <button
+            className="nav-btn"
+            onClick={showNavbar}>
+            <FaBars />
+        </button>
+        </header>
+       
+        </div>
     )
 }
 

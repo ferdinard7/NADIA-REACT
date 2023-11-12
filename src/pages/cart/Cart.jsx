@@ -9,9 +9,7 @@ import { useSelector } from "react-redux";
 import { PaystackButton } from 'react-paystack';
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { Navigate, useNavigate } from "react-router-dom";
-import { useCookies } from "react-cookie";
-
+import { useNavigate } from "react-router-dom";
 
 const publicKey = 'pk_test_f9fd3ddf5826d25939a3774ce57402d95fc696ad';
 
@@ -84,7 +82,7 @@ const Cart =() => {
 
     payButton && cart.total>= 0 && initiatePayment();
     // history.push("/success");
-  }, [payButton,cart]);
+  }, [payButton,cart, email]);
 
   const onSuccess = (reference) => {
     const success = reference.status;
@@ -132,8 +130,6 @@ const Cart =() => {
                   <img  className="cart-product-img" src={product.img} alt={product.title} />
                   <div className="cart-details">
                     <span className="cart-product-name"> <b>Product: </b> {product.title} </span>
-                    <span className="cart-product-id"> <b>ID: </b> 7546937692 </span>
-                    <div className="cart-product-color" style={{ backgroundColor: "red" }}></div>
                   </div>
                 </div>
                 <div className="cart-price-detail">

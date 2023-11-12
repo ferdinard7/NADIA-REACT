@@ -1,6 +1,5 @@
 .footer-container {
     background-color: #000;
-    /* height: 100px; */
 }
 
 .footer-wrapper {
@@ -69,4 +68,25 @@ footer > small {
 footer > p {
     margin-bottom: 3px;
     font-size: 13px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .footer-wrapper {
+        padding-top: 5%;
+        padding-left: 4%;
+        padding-right: 4%;
+        margin-right: 0;
+        margin-left: 0;
+        flex-wrap: wrap;   
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+
+    .footer-img {
+        height: 70px;
+        margin-left: 5%;
+      }
 }

@@ -101,3 +101,61 @@
   .chef-cap-img {
     height: 700px;
   }
+
+
+
+  @media only screen and (max-width: 1024px) {
+   .first-chef-container {
+    margin-bottom: 15%;
+   }
+  
+    .support1 {
+      position: absolute;
+      width: 90%;
+      height: 100px;
+      top: 55%;
+      right: 170%;
+      text-align: center;
+    }
+    
+    
+    .icon-90 {
+      right: 28%;
+      bottom: 130%;
+      /* transform: translateY(-50%) rotate(90deg); */
+    }
+  
+    .support2 {
+      right: 7%;
+      top: -55%;
+    }
+    
+    .icon-135 {
+      top: 160%;
+      left: 33%;
+      /* margin-bottom: 10%; */
+      /* transform: translateX(-50%) rotate(135deg); */
+    }
+  
+    .support3 {
+      height: 100px;
+      top: 205%;
+      left: 5%;
+    }
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .first-chef-container {
+      margin-top: 25%;
+      margin-bottom: 50%;
+     }
+    
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 1030px) {
+    .first-chef-container {
+      margin-top: 1%;
+      margin-bottom: -25%;
+    }
+  }

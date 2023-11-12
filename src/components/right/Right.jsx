@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { All } from "../../data";
+// import { All } from "../../data";
 import { Link } from "react-router-dom";
-import { ShoppingCartOutlined, SearchOutlined, FavoriteBorderOutlined } from "@mui/icons-material";
+import { SearchOutlined } from "@mui/icons-material";
 import styled from "styled-components";
 import axios from "axios";
 
@@ -37,6 +37,11 @@ const Container = styled.div`
     &:hover ${Info}{
       opacity: 1;
     }
+
+    @media (max-width: 1030px) {
+      height: 100px;
+      min-width: 90px;
+    }
   `;
 
   const Para = styled.p`
@@ -44,6 +49,10 @@ const Container = styled.div`
   z-index: 4;
   font-size: 15px;
   cursor: pointer;
+
+  @media (max-width: 1030px) {
+    font-size: 12px;
+  }
   `
   
   const Circle = styled.div`
@@ -57,6 +66,10 @@ const Container = styled.div`
   const Image = styled.img`
   height: 65%;
   z-index: 2;
+
+  @media (max-width: 1030px) {
+    height: 45%;
+  }
   `;
   
   const Icon = styled.div`
@@ -80,6 +93,10 @@ const Container = styled.div`
   z-index: 4;
   font-size: 15px;
   cursor: pointer;
+
+  @media (max-width: 1030px) {
+    font-size: 12px;
+  }
   `
 
 
@@ -121,17 +138,17 @@ const Right = ({filter}) => {
                   <Para>{oneItem.title}</Para>
                   <Span>{oneItem.price}</Span>
                   <Info>
-                    <Icon>
+                    {/* <Icon>
                       <ShoppingCartOutlined />
-                    </Icon>
+                    </Icon> */}
                     <Link to={`/product/${oneItem._id}`}>
                       <Icon>
                         <SearchOutlined />
                       </Icon>
                     </Link>
-                    <Icon>
+                    {/* <Icon>
                       <FavoriteBorderOutlined />
-                    </Icon>
+                    </Icon> */}
                   </Info>
                 </Container>
           ))
@@ -144,17 +161,17 @@ const Right = ({filter}) => {
                   <Para>{oneItem.title}</Para>
                   <Span>{oneItem.price}</Span>
                   <Info>
-                    <Icon>
+                    {/* <Icon>
                       <ShoppingCartOutlined />
-                    </Icon>
+                    </Icon> */}
                     <Link to={`/product/${oneItem._id}`}>
                       <Icon>
                         <SearchOutlined />
                       </Icon>
                     </Link>
-                    <Icon>
+                    {/* <Icon>
                       <FavoriteBorderOutlined />
-                    </Icon>
+                    </Icon> */}
                   </Info>
                 </Container>
           ))

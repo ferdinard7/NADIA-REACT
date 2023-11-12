@@ -37,11 +37,6 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.star-icon {
-    /* color: blue; */
-    /* background-color: blue; */
-}
-
 .bread-login-wrapper {
     position: relative;
     z-index: 1;
@@ -98,3 +93,16 @@ input {
     font-size: 15px;
     margin-top: 4%;
 }
+
+@media only screen and (max-width: 600px) {
+    .bread-login-wrapper {
+        width: 85%;
+        /* height: 70vh; */
+    }
+
+    .login-logo {
+        height: 60px;
+        padding-top: 6%;
+        text-align: center;
+      }
+}   

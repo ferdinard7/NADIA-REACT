@@ -28,3 +28,35 @@
     height: 250px;
     width: 250px;
 }
+
+@media only screen and (max-width: 600px) {
+    .gallery-page-container {
+        padding: 3% 7%;
+        flex-wrap: wrap;
+    }
+    
+    .first-gallery-page {
+        margin-right: 3%;
+        margin-left: 2%;
+    }
+    
+    .first-gallery-page > img {
+        height: 300px;
+        width: 300px;
+    }
+    
+    .second-gallery-page {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3%;
+    }
+    
+    .second-gallery-page > img {
+        margin-right: 5%;
+        margin-bottom: 5%;
+        height: 300px;
+        width: 300px;
+    }
+    
+}
+

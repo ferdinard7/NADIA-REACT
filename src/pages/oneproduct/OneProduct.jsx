@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addProduct } from "../../redux/cartRedux";
 import axios from "axios";
+import CartButton from "../../components/CartButton";
 
 function OneProduct() {
     
@@ -51,6 +52,7 @@ function OneProduct() {
     <div>
     <Bonus />
     <Navbar2 />
+    <CartButton />
     <div className="one-product-container">
     <div className="one-product-wrapper">
     

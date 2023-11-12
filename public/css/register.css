@@ -4,8 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* min-height: 100vh; */
-    /* background-color: #f0f0f0; */
 }
 
 .register-logo {
@@ -37,10 +35,6 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.star-icon {
-    /* color: blue; */
-    /* background-color: blue; */
-}
 
 .bread-register-wrapper {
     position: relative;
@@ -97,4 +91,18 @@ input {
 .register-paragraph {
     font-size: 15px;
     margin-top: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+    .bread-register-wrapper {
+        height: 85vh;
+        width: 85%;
+        border-radius: 10px;
+        background-color: #fff;
+       
+    }
+    
+    .register-logo {
+        height: 60px;
+      }
 }

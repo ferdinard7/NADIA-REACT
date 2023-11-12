@@ -52,10 +52,6 @@
   height: 160px;
 }
 
-.one-product-details {
-
-}
-
 .one-product-details > h3 {
   margin-bottom: 9%;   
 }
@@ -84,4 +80,14 @@
     padding: 7px 17px;
     margin-top: 6%;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .one-product-img {
+        margin-right: 10%;
+       }
+       
+       .one-product-img > img {
+         height: 100px;
+       }
 }

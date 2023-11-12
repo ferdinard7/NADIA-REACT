@@ -15,6 +15,22 @@
 }
 
 
+@media only screen and (max-width: 1024px) {
+  .choose-container {
+    margin: 0 3%;
+}
+
+.choose-paragraph {
+  padding: 1% 6%;
+  line-height: 2;
+}
+
+.choose-heading {
+  font-size: 47px;
+  margin-bottom: 3%;
+}
+}
+
 
 
 

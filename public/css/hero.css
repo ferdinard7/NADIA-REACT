@@ -4,8 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* min-height: 100vh; */
-    /* background-color: #f0f0f0; */
 }
 
 .hero-wrapper {
@@ -31,10 +29,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.star-icon {
-    /* color: blue; */
-    /* background-color: blue; */
-}
+
 
 .bread-wrapper {
     position: relative;
@@ -56,3 +51,19 @@
     font-weight: 600;
     margin-top: 15px;  
 }
+
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    .bread-heading {
+        letter-spacing: 8px;
+    }
+    
+    .welcome-heading {
+        letter-spacing: 8px;
+    }
+  }
+  
+
