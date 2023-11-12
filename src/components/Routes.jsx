@@ -41,8 +41,10 @@ const user = useSelector((state) => state.user.currentUser);
       <Routes>
       <Route path="/">
           <Route  index element={<Home />} />
-          <Route path="login" element={user ? <Navigate to="/" /> : <Login />} />
-          <Route path="register" element={user ? <Navigate to="/" /> : <Register />}/>
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+          {/* <Route path="login" element={user ? <Navigate to="/" /> : <Login />} />
+          <Route path="register" element={user ? <Navigate to="/" /> : <Register />}/> */}
           <Route path="products/all" element={<AllProducts />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="product/:id" element={<OneProduct />} />
