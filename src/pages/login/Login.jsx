@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+  import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { login } from "../../redux/apiCalls";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
-import { useCookies } from "react-cookie";
-// import axios from "axios";
+
 
 const Button = styled.button`
   width: 82%;
@@ -26,19 +25,27 @@ const Error = styled.span`
 `;
 
 function Login() {
+  
+  const navigate = useNavigate();
 
-  const [cookies, setCookie, removeCookie] = useCookies(null);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
   const { isFetching, error } = useSelector((state) => state.user);
 
-  const handleClick = (e) => {
+  const handleClick = async (e) => {
     e.preventDefault();
     const user = { email, password}
     console.log(user);
-    login(dispatch, user);
+
+    try {
+      await login(dispatch, user);
+      
+      navigate("/cart");
+    } catch (err) {
+      console.log(err);
+    }
   };
 
 
