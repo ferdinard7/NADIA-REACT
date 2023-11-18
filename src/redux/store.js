@@ -15,13 +15,15 @@ import storage from 'redux-persist/lib/storage';
 
 const persistConfig = {
   key: 'root',
-  version: 1, // key for the root of the Redux state object
-  storage, // storage mechanism
+  version: 1,
+  storage,
+  whitelist: ['user', 'cart'], // Include 'user', exclude 'cart' from persistence
 };
 
 const rootReducer = combineReducers({user:userReducer, cart:cartReducer})
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
+// const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 export const store = configureStore({
   reducer: persistedReducer,

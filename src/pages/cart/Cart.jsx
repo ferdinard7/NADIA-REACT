@@ -5,14 +5,14 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import styled from "styled-components";
 import Footer from "../../components/footer/Footer";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { PaystackButton } from 'react-paystack';
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { clearCart } from "../../redux/cartRedux";
 
 const publicKey = 'pk_test_f9fd3ddf5826d25939a3774ce57402d95fc696ad';
-
 
 const SummaryTitle = styled.h1`
 font-weight:  200;
@@ -26,17 +26,12 @@ justify-content: space-between;
 const SummaryItemText = styled.span``
 const SummaryItemPrice = styled.span``
 
-
-
-
-
-const Cart =() => {
+const Cart = () => {
+  const dispatch = useDispatch();
 
   const user = useSelector((state) => state.user.currentUser);
 
   const email = user.email;
-
- 
 
   const cart = useSelector(state=> state.cart);
   const navigate = useNavigate();
@@ -68,10 +63,7 @@ const Cart =() => {
         });
 
         console.log(res.data.status);
-         
-
         // history.push({data: res.data});
-
       }catch (error) {
         console.log(error);
         // Handle the error
@@ -87,7 +79,9 @@ const Cart =() => {
   const onSuccess = (reference) => {
     const success = reference.status;
     if (success === "success") {
-      navigate("/success")
+      console.log("success");
+       dispatch(clearCart());
+      navigate("/success");
     } else {
       navigate("/failure")
     }

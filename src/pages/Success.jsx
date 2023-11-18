@@ -8,7 +8,7 @@ function Success() {
     
     return (
    <div>
-    successful
+    successful, Thanks for shopping with Us
    </div>
     )
 }
