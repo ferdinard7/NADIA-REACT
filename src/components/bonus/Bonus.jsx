@@ -5,7 +5,9 @@ function Bonus() {
     return (
    <div className="bonus-container">
    <div className="bonus-wrapper">
-   <p> <LocationOnIcon className="location" /> Ugbowo 300103, Benin city, Edo, Nigeria </p> 
+   <marquee 
+    behavior="scroll" direction="left" scrollamount="1"
+   > <LocationOnIcon className="location" /> Ugbowo 300103, Benin city, Edo, Nigeria </marquee> 
     </div>
 
    </div>

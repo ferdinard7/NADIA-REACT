@@ -5,7 +5,7 @@ import { Instagram, Facebook, Twitter } from '@mui/icons-material';
 function Footer() {
 
    return (
-      <div className="footer-container contact">
+      <div className="contact footer-container">
          <div className="footer-wrapper">
             <div className="footer-logo">
                <img className="footer-img" src="/images/nadia.png" alt="logo" />

@@ -66,10 +66,7 @@ const Cart = () => {
         // history.push({data: res.data});
       }catch (error) {
         console.log(error);
-        // Handle the error
-      } finally {
-        // setIsLoading(true);
-      }
+      } 
     };
 
     payButton && cart.total>= 0 && initiatePayment();
